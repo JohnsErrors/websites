@@ -1,0 +1,11 @@
+# Use a base image with Python installed
+FROM python:3.9-alpine
+
+# Copy the script to the container
+COPY 0.py /app/0.py
+
+# Set the working directory to /app
+WORKDIR /app
+
+# Run the script
+CMD ["python", "0.py"]
